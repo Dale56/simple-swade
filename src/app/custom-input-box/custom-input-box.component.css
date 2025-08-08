@@ -1,0 +1,22 @@
+textarea {
+    margin-top: 10px;
+    margin-left: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    resize: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.label {
+    width: 90px;
+    text-align: left;
+}

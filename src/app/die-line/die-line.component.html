@@ -1,0 +1,27 @@
+<div class="centering-div">
+    <div class="label">
+        <span *ngIf="!editing">{{ mainLabel + ':'}}</span>
+        <input *ngIf="editing" [(ngModel)]="mainLabel" (keyup.enter)="editSkill()" #customskill>
+    </div>
+    <div>
+        <app-dice-box-d4 class="first-box" label="d4" value="d4" [checked]="selectedValue ==='d4'"
+            (dieChosen)="selectedValue = $event"></app-dice-box-d4>
+
+        <app-dice-box-d6 label="d6" value="d6" [checked]="selectedValue === 'd6'"
+            (dieChosen)="selectedValue = $event"></app-dice-box-d6>
+
+        <app-dice-box-d8 label="d8" value="d8" [checked]="selectedValue === 'd8'"
+            (dieChosen)="selectedValue = $event"></app-dice-box-d8>
+
+        <app-dice-box-d10 label="d10" value="d10" [checked]="selectedValue === 'd10'"
+            (dieChosen)="selectedValue = $event"></app-dice-box-d10>
+
+        <app-dice-box-d12 label="d12" value="d12" [checked]="selectedValue === 'd12'"
+            (dieChosen)="selectedValue = $event"></app-dice-box-d12>
+    </div>
+    <div class="end-buttons">
+    <button *ngIf="!editing && editable" class="edit-button" (click)="editSkill()">Edit</button>
+    <button *ngIf="editing && editable" class="edit-button" (click)="editSkill()">Save</button>
+    <button *ngIf="removable" class="remove-button" (click)="removeSkillCall()">Remove</button>
+    </div>
+</div>
