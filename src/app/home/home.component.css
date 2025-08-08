@@ -1,0 +1,55 @@
+.main {
+    background-color: gray;
+    height: 375px;
+    width: 575px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 20px;
+}
+
+.attributes {
+    width: 400px;
+}
+
+.name-stats {
+    width: 300px;
+}
+
+.skills {
+    width: 715px;
+}
+
+.edges {
+    width: 300px;
+    height: 765px;
+}
+
+.gear {
+    width: 300px;
+    height: 765px;
+}
+
+.super-row-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.column-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.row-2 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

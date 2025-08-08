@@ -1,0 +1,18 @@
+@use '@angular/cdk';
+@include cdk.text-field-autosize;
+
+textarea {
+    border: none;
+    border-bottom: 2px solid darkgray; 
+    background-color: transparent;
+    width: 250px;
+    resize: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}

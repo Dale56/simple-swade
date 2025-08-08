@@ -1,0 +1,20 @@
+<div class="centering-div">
+    <div class="dice-stats">
+        <div class="dice-line">
+            <app-die-line *ngFor="let stat of attributesToShow" [name]="stat" [mainLabel]="stat"></app-die-line>
+        </div>
+        <div class="number-stats">
+            <div class="pace-div">
+                <label>Pace</label>
+                <input placeholder="0" type="text" pattern="[0-9()]+">
+            </div>
+            <div class="parry-div">
+                <label>Parry</label>
+                <input placeholder="0" type="text" pattern="[0-9()]+">
+            </div>
+            <div class="toughness-div">
+                <label>Toughness</label>
+                <input placeholder="0" type="text" pattern="[0-9()]+">
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,65 @@
+.main-container {
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+}
+
+.wounds {
+    margin-top: 25px;
+    width:275px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    position: relative;
+}
+
+.buttons input:nth-child(1) {
+    position: absolute;
+    left: -121px;
+}
+
+.buttons input:nth-child(2) {
+    position: absolute;
+    left: -85px;
+}
+
+.buttons input:nth-child(3) {
+    position: absolute;
+    left: -49px;
+}
+
+.buttons input:nth-child(4) {
+    position: absolute;
+    left: 5px;
+}
+
+.buttons input:nth-child(5) {
+    position: absolute;
+    left: 67.5px;
+}
+
+.buttons input:nth-child(6) {
+    position: absolute;
+    left: 104px;
+}
+
+.wounds-text-top {
+    font-size: 20px;
+    word-spacing: 15px;
+}
+
+.wounds-text-bottom {
+    font-size: 20px;
+    word-spacing: 105px;
+    margin-top: 30px;
+}
+
+.example {
+    font-size: 1500px;
+}

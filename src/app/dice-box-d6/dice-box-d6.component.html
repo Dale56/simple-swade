@@ -1,0 +1,8 @@
+<label class="click-area">
+    <div class="die-overlay-container">
+        <app-svg-square class="die-shape"></app-svg-square>
+        <input type="radio" [value]="value" [checked]="checked" (change)="handleClick()">
+        <span class="die-text">{{ label }} </span>
+        <app-svg-filled-circle class="test"></app-svg-filled-circle>
+    </div>
+</label>

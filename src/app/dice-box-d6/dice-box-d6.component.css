@@ -1,0 +1,39 @@
+input {
+    display: none;
+}
+
+.test {
+    display: none;
+}
+
+.click-area {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.die-shape {
+    display: block;
+}
+
+.click-area input[type="radio"]:checked + .die-text {
+    display: none;
+}
+
+.click-area input[type="radio"]:checked ~ .test {
+    display: flex;
+}
+
+.die-overlay-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.die-text, .test {
+    position: absolute;
+    padding-top: 35%;
+}
+
+.die-text {
+    text-align: center;
+}
