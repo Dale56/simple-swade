@@ -1,0 +1,43 @@
+.row-1 {
+    font-size: 25px;
+   }
+
+.row-2{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Weapon */
+.row-1 span:nth-child(1) {
+    margin-left: 10px;
+}
+
+/* Range */
+.row-1 span:nth-child(2) {
+    margin-left: 190px;
+}
+
+/* Damage */
+.row-1 span:nth-child(3) {
+    margin-left: 46px;;   
+}
+
+/* AP */
+.row-1 span:nth-child(4) {
+    margin-left: 35px;   
+}
+
+/* ROF */
+.row-1 span:nth-child(5) {
+    margin-left: 80px;   
+}
+
+/* WT */
+.row-1 span:nth-child(6) {
+    margin-left: 62px;
+}
+
+/* Notes */
+.row-1 span:nth-child(7) {
+    margin-left: 80px;   
+}
