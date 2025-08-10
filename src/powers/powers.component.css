@@ -5,14 +5,30 @@
 }
 
 .row-2 {
-    margin-left:15px;
+    
 }
 
 .row-1 span {
     font-size: 25px;
 }
 
-.column-1 {
-    margin-left:15px;
+.row-1 span:nth-child(1) {
+    margin-left: 10px;
+    gap: 15px;
 }
 
+.row-1 span:nth-child(2) {
+    margin-left: 5px;
+}
+
+.row-1 span:nth-child(3) {
+    margin-left: -115px;
+}
+
+.row-1 span:nth-child(4) {
+    margin-left: -100px;
+}
+
+.row-1 span:nth-child(5) {
+    margin-left: -25px;
+}

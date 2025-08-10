@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-custom-input-box-underline',
@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class CustomInputBoxUnderlineComponent {
+  @Input() width: string = "250px"; 
 }
