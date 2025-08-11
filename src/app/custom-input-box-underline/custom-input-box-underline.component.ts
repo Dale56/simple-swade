@@ -9,4 +9,6 @@ import { Component, Input } from '@angular/core';
 
 export class CustomInputBoxUnderlineComponent {
   @Input() width: string = "250px"; 
+  @Input() fontSize: string = "15px"
+  @Input() height: string = "";
 }

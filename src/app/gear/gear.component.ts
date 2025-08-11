@@ -9,5 +9,5 @@ import { NgFor } from '@angular/common';
   styleUrl: './gear.component.css'
 })
 export class GearComponent {
-  gearLines = Array(16).fill(1).map((x,i)=>i+1); 
+  gearLines = Array(14).fill(1).map((x,i)=>i+1); 
 }

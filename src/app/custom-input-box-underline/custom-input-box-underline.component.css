@@ -7,6 +7,7 @@ textarea {
     background-color: transparent;
     width: 250px;
     resize: none;
+    font-size: 15px;
 }
 
 .row {
