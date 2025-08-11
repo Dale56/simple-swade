@@ -10,3 +10,7 @@
 <div class="row-2">
     <app-weapon-row *ngFor="let item of weaponLines"></app-weapon-row>
 </div>
+<div class="row-3">
+    <button (click)="addWeapon()">New Weapon</button>
+    <button (click)="removeWeapon()" *ngIf="weaponLines.length > 6">Remove Weapon</button>
+</div>

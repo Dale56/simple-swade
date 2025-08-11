@@ -8,6 +8,20 @@
     
 }
 
+.row-3 {
+
+}
+
+.row-3 button {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.row-3 button:hover {
+    cursor: pointer;
+}
+
 .row-1 span {
     font-size: 25px;
 }

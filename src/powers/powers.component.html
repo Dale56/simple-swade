@@ -14,3 +14,7 @@
 <div class="row-2">
     <app-power-row *ngFor="let item of powerLines"></app-power-row>
 </div>
+<div class="row-3">
+    <button (click)="addPower()">New Power</button>
+    <button (click)="removePower()" *ngIf="powerLines.length > 6">Remove Power</button>
+</div>

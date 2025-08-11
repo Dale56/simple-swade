@@ -18,6 +18,8 @@
 
 .skills {
     width: 715px;
+    overflow: auto;
+    scrollbar-width: thin;
 }
 
 .edges {
@@ -33,12 +35,13 @@
 .powers {
     margin-top: 10px;
     width: 1350px;
-    
+    overflow: auto;
 }
 
 .weapons {
     margin-top: 10px;
     width: 1350px;
+    overflow: auto;
 }
 
 .super-row-1 {
