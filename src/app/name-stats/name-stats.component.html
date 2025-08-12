@@ -5,12 +5,18 @@
     <div class="wounds">
         <span class="wounds-text-top">-1 -2 -3 INCAP -2 -1</span>
         <div class="buttons">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
+            <div class="wound-buttons" #woundbuttons>
+                <input type="checkbox" [(ngModel)]="woundsStates[0]" (change)="validateWound(0)">
+                <input type="checkbox" [(ngModel)]="woundsStates[1]" (change)="validateWound(1)">
+                <input type="checkbox" [(ngModel)]="woundsStates[2]" (change)="validateWound(2)">
+            </div>
+            <div class="incapacitated-button">
+                <input type="checkbox" name="incapacitated" #incapacitated>
+            </div>
+            <div class="fatigue-buttons">
+                <input type="checkbox" [(ngModel)]="fatigueStates[0]" (change)="validateFatigue(0)">
+                <input type="checkbox" [(ngModel)]="fatigueStates[1]" (change)="validateFatigue(1)">
+            </div>
         </div>
         <span class="wounds-text-bottom">Wounds Fatigue</span>
     </div>
