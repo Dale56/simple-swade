@@ -1,6 +1,21 @@
 <div class="main-container">
-    <div class="">
-        <app-custom-input-box *ngFor="let item of statsToShow" [label]="item + ':'"></app-custom-input-box>
+    <div class="rows">
+        <div class="row">
+            <span class="label">Name:</span>
+            <textarea #namecontent></textarea> <br>
+        </div>
+        <div class="row">
+            <span class="label">Race:</span>
+            <textarea #racecontent></textarea> <br>
+        </div>
+        <div class="row">
+            <span class="label">Description:</span>
+            <textarea #descriptioncontent></textarea> <br>
+        </div>
+        <div class="row">
+            <span class="label">Bennies:</span>
+            <textarea #benniescontent></textarea> <br>
+        </div>
     </div>
     <div class="wounds">
         <span class="wounds-text-top">-1 -2 -3 INCAP -2 -1</span>
@@ -20,4 +35,6 @@
         </div>
         <span class="wounds-text-bottom">Wounds Fatigue</span>
     </div>
+    <button (click)="requestStuff()">request</button>
+    <button (click)="saveStuff()">save</button>
 </div>
