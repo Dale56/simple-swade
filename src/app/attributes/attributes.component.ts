@@ -10,4 +10,8 @@ import { NgFor } from '@angular/common';
 })
 export class AttributesComponent {
   attributesToShow = ['Agility', 'Smarts', 'Spirit', 'Strength', 'Vigor']
+
+  saveStuff() {
+    alert('attributes');
+  }
 }

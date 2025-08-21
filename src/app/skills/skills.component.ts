@@ -21,4 +21,7 @@ export class SkillsComponent {
     this.skillsToShow.splice(index, 1);
     }
   }
+  saveStuff() {
+    alert('skills');
+  }
 }

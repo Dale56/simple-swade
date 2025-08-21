@@ -13,4 +13,8 @@ export class EdgesEtcComponent {
   hindrances = Array(4).fill(1).map((x,i)=>i+1);
   edges = Array(4).fill(1).map((x,i)=>i+1);
   advances = Array(5).fill(1).map((x,i)=>i+1);
+
+  saveStuff() {
+    alert('edges');
+  }
 }

@@ -2,36 +2,39 @@
     <div class="column-1">
         <div class="row-1">
             <div class="main attributes">
-                <app-attributes></app-attributes>
+                <app-attributes #diceattributes></app-attributes>
             </div>
             <div class="main name-stats">
-                <app-name-stats></app-name-stats>
+                <app-name-stats #namestats></app-name-stats>
             </div>
         </div>
         <div class="row-2">
             <div class="main skills">
-                <app-skills></app-skills>
+                <app-skills #diceskills></app-skills>
             </div>
         </div>
     </div>
     <div class="column-2">
         <div class="main gear">
-            <app-gear></app-gear>
+            <app-gear #gear></app-gear>
         </div>
     </div>
     <div class="column-3">
         <div class="main edges">
-            <app-edges-etc></app-edges-etc>
+            <app-edges-etc #hindrances></app-edges-etc>
         </div>
     </div>
 </div>
 <div class="super-row-2">
     <div class="main powers">
-        <app-powers></app-powers>
+        <app-powers #powers></app-powers>
     </div>
 </div>
 <div class="super-row-3">
     <div class="main weapons">
-        <app-weapons></app-weapons>
+        <app-weapons #weapons></app-weapons>
     </div>
 </div>
+
+<button (click)="saveSheet()">save</button>
+<button>load</button>

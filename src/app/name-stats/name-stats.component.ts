@@ -53,6 +53,7 @@ export class NameStatsComponent {
   }
 
   saveStuff() {
+    alert('namestuff');
     this.characterInfo = {
       "name": this.nameContent.nativeElement.value,
       "race": this.raceContent.nativeElement.value,
@@ -62,6 +63,7 @@ export class NameStatsComponent {
     this.characterService.sendSheetInfo(this.characterInfo).subscribe(response => {
       console.log('Save response:', response);
     });
+    
   }
 
 }

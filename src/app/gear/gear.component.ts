@@ -10,4 +10,8 @@ import { NgFor } from '@angular/common';
 })
 export class GearComponent {
   gearLines = Array(14).fill(1).map((x,i)=>i+1); 
+
+  saveStuff() {
+    alert('gear');
+  }
 }

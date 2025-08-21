@@ -9,6 +9,73 @@ interface NameStats {
   bennies: string;
 }
 
+interface DiceAttributes {
+  agility: number;
+  smarts: number;
+  spirit: number;
+  strength: number;
+  vigor: number;
+}
+
+interface DiceSkills {
+  athletics: number;
+  commonknowledge: number;
+  notice: number;
+  persuassion: number;
+  stealth: number;
+  [key: string]: number;
+}
+
+interface Gear {
+  [key: string]: string;
+}
+
+interface Hindrances {
+  [key: string]: string;
+}
+
+interface Edges {
+  [key: string]: string;
+}
+
+interface Advances{
+  [key: string]: string;
+}
+
+interface Powers {
+  power: {
+    name: string;
+    pp: string;
+    range: string;
+    duration: string;
+    effect: string;
+  }
+} 
+
+interface Weapons {
+  weapon: {
+    name: string;
+    range: string;
+    damage: string;
+    ap: string;
+    rof: string;
+    wt: string;
+    notes: string;
+  }
+}
+
+interface CharacterSheet {
+  diceattributes: DiceAttributes;
+  namestats: NameStats;
+  diceskills: DiceSkills;
+  gear: Gear;
+  hindrances: Hindrances;
+  edges: Edges;
+  advances: Advances;
+  powers: Powers;
+  weapons: Weapons;
+}
+
 @Injectable({
   providedIn: 'root'
 })
