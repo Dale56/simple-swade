@@ -2,7 +2,7 @@
     <div class="dice-stats">
         <div class="dice-line">
             <app-die-line *ngFor="let skill of skillsToShow; let i = index" [name]="skill" [mainLabel]="skill"
-                [removable]="i > 4" [editable]="i > 4" (callRemoval)="removeSkill($event)"></app-die-line>
+                [removable]="i > 4" [editable]="i > 4" (callRemoval)="removeSkill($event)" #dieskills></app-die-line>
         </div>
         <div class="new-button">
             <button (click)="newSkill()">New Skill</button>

@@ -1,7 +1,7 @@
 <div class="centering-div">
     <div class="dice-stats">
         <div class="dice-line">
-            <app-die-line *ngFor="let stat of attributesToShow" [name]="stat" [mainLabel]="stat"></app-die-line>
+            <app-die-line *ngFor="let stat of attributesToShow" [name]="stat" [mainLabel]="stat" #dielines></app-die-line>
         </div>
         <div class="number-stats">
             <div class="pace-div">

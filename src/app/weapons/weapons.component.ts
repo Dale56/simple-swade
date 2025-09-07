@@ -22,7 +22,7 @@ export class WeaponsComponent {
  }
 
 saveStuff() {
-  alert('weapons');
+  
 }
 }
 

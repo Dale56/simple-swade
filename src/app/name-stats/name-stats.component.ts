@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, ViewChildren } from '@angular/core';
 import { CustomInputBoxComponent } from "../custom-input-box/custom-input-box.component";
 import { NgForOf } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -53,7 +53,6 @@ export class NameStatsComponent {
   }
 
   saveStuff() {
-    alert('namestuff');
     this.characterInfo = {
       "name": this.nameContent.nativeElement.value,
       "race": this.raceContent.nativeElement.value,
@@ -63,7 +62,5 @@ export class NameStatsComponent {
     this.characterService.sendSheetInfo(this.characterInfo).subscribe(response => {
       console.log('Save response:', response);
     });
-    
   }
-
 }

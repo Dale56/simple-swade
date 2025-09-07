@@ -22,7 +22,7 @@ export class PowersComponent {
   }
 
   saveStuff() {
-    alert('powers');
+    
   }
 }
 

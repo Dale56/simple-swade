@@ -24,8 +24,8 @@ export class HomeComponent {
 
   saveSheet() {
     this.diceAttributes.saveStuff();
-    this.nameStats.saveStuff();
     this.diceSkills.saveStuff();
+    this.nameStats.saveStuff();
     this.gear.saveStuff();
     this.hindrances.saveStuff();
     this.powers.saveStuff();

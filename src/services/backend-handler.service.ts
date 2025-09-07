@@ -88,6 +88,10 @@ export class BackendHandlerService {
     return this.http.get<any>(this.url);
   }
 
+  assembleSheetInfo() {
+    
+  }
+
   sendSheetInfo(sheetData: NameStats): Observable<any> {
     const dataOut = {
       "name-stats": {
