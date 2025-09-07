@@ -43,8 +43,7 @@ interface Advances{
 }
 
 interface Powers {
-  power: {
-    name: string;
+  [key: string]: {
     pp: string;
     range: string;
     duration: string;

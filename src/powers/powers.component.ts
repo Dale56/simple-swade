@@ -1,6 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, ViewChildren, QueryList } from '@angular/core';
 import { PowerRowComponent } from "../app/power-row/power-row.component";
 import { NgFor, NgIf } from '@angular/common';
+
+interface Powers {
+  [key: string]: {
+    pp: string;
+    range: string;
+    duration: string;
+    effect: string;
+  }
+}
 
 @Component({
   selector: 'app-powers',
@@ -9,10 +18,12 @@ import { NgFor, NgIf } from '@angular/common';
   styleUrl: './powers.component.css'
 })
 export class PowersComponent {
-  powerLines = Array(6).fill(1).map((x,i)=>i+1); 
+  powerLines = Array(6);
+  powerJSON = {} as Powers;
+  @ViewChildren(PowerRowComponent) powerRows!: QueryList<PowerRowComponent>;
 
   addPower() {
-    this.powerLines.push(1)
+    this.powerLines.push("");
   }
 
   removePower() {
@@ -22,7 +33,22 @@ export class PowersComponent {
   }
 
   saveStuff() {
-    
-  }
+  const newPowerJSON: Powers = {};
+  this.powerRows.forEach(row => {
+    const currentPower = row.getPower();
+    if (currentPower && currentPower[0].trim() !== "") {
+      const powerName = currentPower[0];
+      newPowerJSON[powerName] = {
+        pp: currentPower[1],
+        range: currentPower[2],
+        duration: currentPower[3],
+        effect: currentPower[4]
+      };
+    }
+  });
+  this.powerJSON = newPowerJSON;
+  console.log("power:", JSON.stringify(this.powerJSON));
+}
+
 }
 

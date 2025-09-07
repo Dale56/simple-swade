@@ -1,4 +1,36 @@
 .main {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+.main textarea {
+    border: none;
+    border-bottom: 2px solid darkgray;
+    background-color: transparent;
+    resize: none;
+    font-size: 15px;
+}
+
+.main textarea:nth-child(1){
+    width: 250px;
+}
+
+.main textarea:nth-child(2) {
+    width: 100px;
+}
+
+.main textarea:nth-child(3) {
+    width: 150px;
+}
+
+.main textarea:nth-child(4) {
+    width: 250px;
+}
+
+.main textarea:nth-child(5) {
+    width: 500px;
 }
