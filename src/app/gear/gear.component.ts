@@ -15,20 +15,13 @@ interface Gear {
 })
 
 export class GearComponent{
-  gearJSON: Gear = {};
   gearLines = Array(14).fill("");
-  @ViewChildren(CustomInputBoxUnderlineComponent) gearLinesElements !: QueryList<CustomInputBoxUnderlineComponent>;
 
   trackByIndex(index: number, item: string) {
     return index;
   }
 
   saveStuff() {
-    // this.updateGear();
     console.log(this.gearLines);
-    for (let i = 0; i < this.gearLines.length; i++) {
-      this.gearJSON[i] = this.gearLinesElements.get(i)?.content ?? "";
-    }
-    // send out gearlines instead of a dedicated json
   }
 }
