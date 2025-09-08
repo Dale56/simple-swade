@@ -47,7 +47,7 @@ export class PowersComponent {
     }
   });
   this.powerJSON = newPowerJSON;
-  console.log("power:", JSON.stringify(this.powerJSON));
+  return this.powerJSON;
 }
 
 }

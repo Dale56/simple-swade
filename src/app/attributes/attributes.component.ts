@@ -30,6 +30,6 @@ export class AttributesComponent {
       strength: Number(this.dieLines.get(3)?.selectedValue.slice(1)),
       vigor: Number(this.dieLines.get(4)?.selectedValue.slice(1))
     }
-    console.log(this.attributeData);
+    return this.attributeData;
   }
 }

@@ -1,9 +1,4 @@
 <div class="main">
-<app-custom-input-box-underline [width]="'250px'"></app-custom-input-box-underline>
-<app-custom-input-box-underline [width]="'100px'"></app-custom-input-box-underline>
-<app-custom-input-box-underline [width]="'100px'"></app-custom-input-box-underline>
-<app-custom-input-box-underline [width]="'100px'"></app-custom-input-box-underline>
-<app-custom-input-box-underline [width]="'100px'"></app-custom-input-box-underline>
-<app-custom-input-box-underline [width]="'100px'"></app-custom-input-box-underline>
-<app-custom-input-box-underline [width]="'470px'"></app-custom-input-box-underline>
+    <textarea *ngFor="let item of weaponContents; let i = index; trackBy: trackByIndex"
+        [(ngModel)]="weaponContents[i]"></textarea>
 </div>

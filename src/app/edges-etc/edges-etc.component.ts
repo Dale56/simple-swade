@@ -4,6 +4,24 @@ import { CustomInputBoxUnderlineComponent as CustomInputBoxUnderlineComponent } 
 import { NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
+interface Hindrances {
+  [key: string]: string;
+}
+
+interface Edges {
+  [key: string]: string;
+}
+
+interface Advances{
+  [key: string]: string;
+}
+
+interface HindrancesSection {
+  hindrances: Hindrances;
+  edges: Edges;
+  advances: Advances;
+}
+
 @Component({
   selector: 'app-edges-etc',
   imports: [CustomInputBoxComponent, CustomInputBoxUnderlineComponent, NgFor, FormsModule],
@@ -20,8 +38,27 @@ export class EdgesEtcComponent {
   }
 
   saveStuff() {
-    console.log(this.hindrances);
-    console.log(this.edges);
-    console.log(this.advances);
+    const hindranceJSON = {} as Hindrances;
+    for (let i = 0; i < this.hindrances.length; i++) {
+      hindranceJSON[i] = this.hindrances[i];
+    }
+
+    const edgeJSON = {} as Edges;
+    for (let i = 0; i < this.edges.length; i++) {
+      edgeJSON[i] = this.edges[i];
+    }
+
+    const advanceJSON = {} as Advances;
+    for (let i = 0; i < this.advances.length; i++) {
+      advanceJSON[i] = this.advances[i];
+    }
+
+    const hindrancesSection = {
+      hindrances: hindranceJSON,
+      edges: edgeJSON,
+      advances: advanceJSON
+    }
+
+    return hindrancesSection;
   }
 }

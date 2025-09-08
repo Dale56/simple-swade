@@ -50,6 +50,6 @@ export class SkillsComponent {
         this.skillsInfo[this.skillsToShow[i]] = Number(this.dieskills.get(i)?.selectedValue.slice(1));
       }
     }
-    console.log(this.skillsInfo);
+    return this.skillsInfo;
   }
 }

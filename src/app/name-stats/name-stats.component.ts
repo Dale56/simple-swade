@@ -59,8 +59,9 @@ export class NameStatsComponent {
       "description": this.descriptionContent.nativeElement.value,
       "bennies": this.benniesContent.nativeElement.value
     }
-    this.characterService.sendSheetInfo(this.characterInfo).subscribe(response => {
-      console.log('Save response:', response);
-    });
+    return this.characterInfo;
+    // this.characterService.sendSheetInfo(this.characterInfo).subscribe(response => {
+    //   console.log('Save response:', response);
+    // });
   }
 }

@@ -42,6 +42,12 @@ interface Advances{
   [key: string]: string;
 }
 
+interface HindrancesSection {
+  hindrances: Hindrances;
+  edges: Edges;
+  advances: Advances;
+}
+
 interface Powers {
   [key: string]: {
     pp: string;
@@ -52,8 +58,7 @@ interface Powers {
 } 
 
 interface Weapons {
-  weapon: {
-    name: string;
+  [key:string]: {
     range: string;
     damage: string;
     ap: string;
@@ -68,9 +73,7 @@ interface CharacterSheet {
   namestats: NameStats;
   diceskills: DiceSkills;
   gear: Gear;
-  hindrances: Hindrances;
-  edges: Edges;
-  advances: Advances;
+  hindrancessection: HindrancesSection;
   powers: Powers;
   weapons: Weapons;
 }
@@ -91,14 +94,14 @@ export class BackendHandlerService {
     
   }
 
-  sendSheetInfo(sheetData: NameStats): Observable<any> {
+  sendSheetInfo(sheetData: CharacterSheet): Observable<any> {
     const dataOut = {
-      "name-stats": {
+      "completed sheet": {
         ...sheetData
       }
     }
     console.log(sheetData)
-    return this.http.post<NameStats>(this.url, dataOut);
+    return this.http.post<CharacterSheet>(this.url, dataOut);
   }
 }
 

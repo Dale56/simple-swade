@@ -22,6 +22,10 @@ export class GearComponent{
   }
 
   saveStuff() {
-    console.log(this.gearLines);
+    const gearJSON = {} as Gear;
+    for (let i = 0; i < this.gearLines.length; i++) {
+      gearJSON[i] = this.gearLines[i];
+    }
+    return gearJSON;
   }
 }
