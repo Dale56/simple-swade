@@ -1,6 +1,6 @@
 # What is SimpleSwade?
 SimpleSwade is my solution to a problem I've had when preparing for TTRPG sessions where it takes too long creating character sheets just using a PDF editor. 
-For other, more popular, TTRPGs like Dungeons and Dragons, there are already online tools for this problem, but none for SWADE.
+For other more popular TTRPGs like Dungeons and Dragons, there are already online tools for this problem, but none for SWADE.
 
 ![Example of current sheet appearance](<./resources/sheet example.png>)
 
